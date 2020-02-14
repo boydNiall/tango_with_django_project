@@ -11,6 +11,9 @@
 		<div>
 			here is the about page.<br />
 			<strong>Project by Niall Boyd</strong><br />
+			{% if visits %}
+            	<p>Visits: {{ visits }}</p>
+        	{% endif %}
 		</div>
 		<div>
 			<img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" /><!-- New line -->
